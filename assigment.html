@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <title>Assignment</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,700');
+    * {
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+    }
+    #container {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 10px;
+      color: #2b2b2b;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 30px;
+    }
+    header > img {
+      height: 56px;
+    }
+    header > h1 {
+      display: inline-block;
+    }
+    .requirements {
+      list-style-type: none;
+    }
+    .requirements > li {
+      margin-bottom: 25px;
+    }
+    p {
+      line-height: 1.7;
+    }
+    p + p, ul + p {
+      margin-top: 25px;
+    }
+    ul {
+      margin-left: 30px;
+      list-style-type: disc;
+      line-height: 1.7;
+    }
+    code {
+      background-color: #d8e9f3;
+      padding: 0 5px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 90%;
+    }
+    a {
+      color: #35a8e0;
+    }
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head><body><div id="container">
+  <header>
+    <h1>Front-end assignment</h1>
+    <img src="https://www.agillic.com/wp-content/uploads/2016/02/Logo.svg" alt="" />
+  </header>
+  <ol class="requirements">
+    <li>
+      <p>This document describes the requirements you need to fulfill. Read them thoroughly before getting to work!</p>
+      <p>Your task it to create a single page JavaScript application that renders an overview of the TV Series “Mr. Robot”. If you are not up-to-date with this TV series yet, and you would rather avoid spoilers, you can use “Black Mirror”, “Doctor Who”, “Vikings” or “Lost” instead.</p>
+      <p>Your application should render a single page that features the poster, title, genres, rating, description and episode list of the series, and looks somewhat like this:</p>
+      <div style="margin-top: 25px;">
+        <img src="./reference.jpg" alt="Reference image" />
+      </div>
+    </li>
+    <li>
+      <p>Your application must consist of at least 4 files:</p>
+      <ul>
+        <li>an HTML page called <code>index.html</code> page hereby provided for you, <strong>this file you must not edit</strong>,</li>
+        <li>a stylus style sheet called <code>index.styl</code> and its complied version <code>index.css</code> which is already loaded by <code>index.html</code> (you can use <a href="http://beautifytools.com/stylus-compiler.php" target="_blank">this online stylus compiler</a> to compile your stylus code),</li>
+        <li>a JavaScript file called <code>index.js</code> which is already loaded by <code>index.html</code>. The application should render inside the <code>#application-root</code> element in the <code>index.html</code> file.</li>
+      </ul>
+    </li>
+    <li>
+      <p>Use Git and don’t be conservative with committing your changes. If you don’t want to make your work public, you can use a local Git project without a remote, or you can create a private repository <a href="https://about.gitlab.com/" target="_blank">on GitLab</a>.</p>
+    </li>
+    <li>The application has to work only in Google Chrome.</li>
+    <li>All the data required for rendering the page can be loaded <a href="http://api.tvmaze.com/singlesearch/shows?q=mr-robot&embed=episodes" target="_blank">from the TVMaze API</a> in <code>JSON</code> format. (You will have to edit the show name in the URL if you are working with another TV series).</li>
+    <li>
+      <p>A few thigs to look out for:</p>
+      <ul>
+        <li>Use nice custom font face e.g. from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</li>
+        <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">CSS flexbox</a> as much as it makes sense.</li>
+        <li>It is recommended that you use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">The Fetch API</a> to load the data from the TVMaze API.</li>
+        <li>Use ES6, and try using as few variables and control structures as possible (but still prefer readable code to few variables and control structures).</li>
+        <li>Make sure that the rating of the TV series is rounded to integers, and that season and episode numbers always take at least 2 digits (<code>S01E01</code> instead of <code>S1E1</code>).</li>
+      </ul>
+    </li>
+    <li><p>Should you have any questions, please don’t hesitate to contact me at <a href="mailto:bence.toth@agillic.com">bence.toth@agillic.com</a>.</p></li>
+    <li><p>Have fun!</p></li>
+  </ul>
+</div></body></html>
